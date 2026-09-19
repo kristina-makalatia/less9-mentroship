@@ -1,0 +1,141 @@
+.box1 {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+}
+.box2 {
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+}
+.box3 {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+}
+.box4 {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+}
+.wraper {
+  display: flex;
+  /* justify-content: space-between; */
+  /* column-gap: 50px;
+  row-gap:30px; */
+  gap: 30px 50px;
+}
+
+/*  */
+.container {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: lightblue;
+  display: flex;
+  column-gap: 130px;
+}
+.left-block {
+  width: 490px;
+}
+.right-block {
+  width: 490px;
+}
+.title-block {
+  font-size: 56px;
+  /* line-height: 60%; */
+  letter-spacing: 1px;
+}
+.image-right {
+  width: 100%;
+}
+.action-div {
+  width: 100px;
+  height: 48px;
+  background-color: #000;
+  border-radius: 32px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-text {
+  width: 236px;
+}
+.small-block {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+/* 1  example - wrap */
+/* @media (max-width: 1024px) {
+  .wraper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */
+
+/* 2 example - direction */
+/* @media (max-width: 1024px) {
+  .wraper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .box2 {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .box2 {
+    display: block;
+  }
+} */
+
+/* 3 example - % */
+@media (max-width: 1024px) {
+  .wraper {
+    flex-wrap: wrap;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 47%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .left-block {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-block {
+    width: 100%;
+  }
+  .small-text {
+    width: 100%;
+  }
+}
+@media (max-width: 744px) {
+  .title-block {
+    font-size: 40px;
+  }
+  .small-block {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 100%;
+  }
+}
